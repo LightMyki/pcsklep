@@ -1,0 +1,6 @@
+body {
+    background-color: blueviolet;
+}
+input[type=button] {
+    border: 5px solid skyblue;
+}
