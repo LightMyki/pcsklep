@@ -16,9 +16,12 @@ if($name==null && $category!='WybierzKategorie'){
 
     $rezultat1=$con->query("SELECT checkbox,id,category,producer,name,quantity,link FROM `warehouse` WHERE category='$category';");
         if($rezultat1->num_rows>0){
-            while($row1=$rezultat1->fetch_assoc())
+            while($row1=$rezultat1->fetch_assoc()){
             echo "<tr><td>".$row1['checkbox']."<td>".$row1['id']."<td>".$row1['category']."<td>".$row1['producer']."<td>".$row1['name']."<td>".$row1['quantity']."<td><a href=".$row1['link'].">Details</a></td>"."</tr>";
-            }
+            $wypisz=`"<tr><td>".$row1['checkbox']."<td>".$row1['id']."<td>".$row1['category']."<td>".$row1['producer']."<td>".$row1['name']."<td>".$row1['quantity']."<td><a href=".$row1['link'].">Details</a></td>"."</tr>"`;
+                header('location:Warehouse.php');
+        }
+        }
     
     
     }
@@ -51,4 +54,4 @@ if($name==null && $category!='WybierzKategorie'){
 
 ?>
 </table>
-<a href="warehouse.html">Back</a>
+<a href="warehouse.php">Back</a>

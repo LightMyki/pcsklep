@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="WarehouseStyle.css">
-    <script src="WarehouseChoose.js"></script> 
+
     <title>Document</title>
 
 </head>
@@ -14,8 +14,7 @@
     <br>
     <a>Sposób wyszukiwania danych</a>
     <br>
-    Po nazwie<input type="checkbox" name="wybor" id="che1" onchange="skrypt1()">
-    Po kategori<input type="checkbox" name="wybor" id="che2" onchange="skrypt1()">
+
     <br>
     <br>
 <form action="szukanie.php" method="post">
@@ -32,7 +31,6 @@
     <br>
     <input type="submit" id="sub">
 
- 
 
 </form>
 

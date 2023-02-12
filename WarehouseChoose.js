@@ -1,3 +1,4 @@
+skrypt1();
 
 function skrypt1() {
     if(document.getElementById("che1").checked) {
