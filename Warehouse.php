@@ -17,7 +17,12 @@
 
     <br>
     <br>
-<form action="szukanie.php" method="post">
+    <?php
+      
+      $myVar="step1";
+    ?>
+<!--<form action="szukanie.php" method="post">-->
+    <form action="" method="get">
     <input type="text" value="" placeholder="Podaj nazwe" id="text" name="name">
     <br>
     <br>
@@ -30,9 +35,15 @@
     <br>
     <br>
     <input type="submit" id="sub">
-
-
+    <br>
+    <br>
 </form>
+<?php
+if(@$_GET['select']!=null) {
+    
+    include 'szukanie.php';
 
+}
+?>
 </body>
 </html>
