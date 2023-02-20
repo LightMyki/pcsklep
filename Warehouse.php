@@ -23,9 +23,11 @@
     ?>
 <!--<form action="szukanie.php" method="post">-->
     <form action="" method="get">
+        <label>Podaj Nazwe: </label>
     <input type="text" value="" placeholder="Podaj nazwe" id="text" name="name">
     <br>
     <br>
+    <label>Podaj Kategorię: </label>
     <select name="select" id="sel">
         <option value="WybierzKategorie">WybierzKategorie</option>
         <option value="motherboard">motherboard</option>
