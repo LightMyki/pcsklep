@@ -45,5 +45,10 @@ if(@$_GET['select']!=null) {
 
 }
 ?>
+<p id="wynik">
+<script>
+    let id=document.getElementById("Identyfikator").value;
+    document.getElementById("Wynik").innerHTML=id;
+</script>
 </body>
 </html>
